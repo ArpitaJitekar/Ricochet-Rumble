@@ -1,0 +1,181 @@
+body{
+    background-color: black;
+    
+
+}
+.game-board{
+    padding:4px;
+    background-color: black;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .cont-rl{
+    display:flex;
+    justify-content: center;
+
+   }
+   .fir-player-left,.sec-player-left{
+    margin-right: 6px;
+
+   }
+   
+   .fir-player-left,.fir-player-right,.sec-player-left,.sec-player-right{
+    color:white;
+    height:30px;
+    width:40px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+   
+    
+   }
+   .display{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .grid-container{
+       display:grid;
+       grid-template-columns:repeat(8,0.7fr);
+       grid-template-rows: repeat(8,0.7fr);;
+       margin-top: 300px;
+       border:5px;
+       border-radius:20px;
+       background-color:rgb(59, 23, 142) ;
+       padding: 16px;
+
+       
+   }
+   .prop{
+       height:55px;
+       width: 55px;
+       background-color:rgb(117, 214, 214);
+       border:solid black 2px;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .canon-firstplayer,.canon-secondplayer,.titan-firstplayer,.titan-secondplayer,.tank-firstplayer,.tank-secondplayer {
+       height:55px;
+       width:55px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+   
+   }
+   .canon-firstplayer{
+       background-color: grey;
+   }
+   .canon-secondplayer{
+       background-color: rgb(106, 95, 95);
+   }
+   .titan-firstplayer{
+       background-color: red;
+       
+   }
+   .titan-secondplayer{
+       background-color: rgb(37, 11, 142);
+       
+   }
+   .tank-firstplayer{
+    background-color: rgb(40, 69, 11);
+   }
+   .tank-secondplayer{
+       background-color: rgb(40, 69, 11);
+   }
+   .semirecoit-firstplayer{
+    border-right: 39px solid red;
+    transform: rotate(45deg);
+   }
+   .semirecoit-secondplayer{
+    border-right: 39px solid rgb(37, 11, 142);
+    transform: rotate(45deg);
+   }
+   .semirecoit-firstplayer,.semirecoit-secondplayer{
+    width: 0px;
+    height: 0px;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+  position: absolute;
+   }
+   .item13,.item57{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+   }
+   .recoit-firstplayer{
+    height:70px;
+    border-left:6px solid  red ;
+    transform:rotate(45deg);
+    position: absolute;
+   }
+   .recoit-secondplayer{
+    height:70px;
+    border-left:6px solid  rgb(37, 11, 142) ;
+    transform:rotate(45deg);
+    position: absolute;
+   }
+
+/*bullet */
+   .bul-1{
+    width:16px;
+    height:16px;
+    background-color: red;
+   position:absolute;
+    border-radius: 50%;
+   }
+   .bul-2{
+    width:16px;
+    height:16px;
+    background-color:blue;
+    position:absolute;
+    border-radius: 50%;
+   }
+   /* responsive*/
+   @media only screen and (max-width:500px){
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(8,0.5fr);
+        grid-template-rows: repeat(8,0.5fr);;
+
+        border:2px;
+        border-radius:6px;
+        background-color:rgb(59, 23, 142) ;
+        padding: 16px;
+ 
+        
+    }
+
+
+    .prop{
+        height:40px;
+        width:40px;
+
+    }
+    .canon-firstplayer,.canon-secondplayer,.titan-firstplayer,.titan-secondplayer,.tank-firstplayer,.tank-secondplayer {
+        height:40px;
+        width:40px;
+    }
+ .recoit-firstplayer,.recoit-secondplayer{
+    height:45px;
+   }
+   .semirecoit-firstplayer{
+    border-right: 29px solid red;
+    transform: rotate(45deg);
+   }
+   .semirecoit-secondplayer{
+    border-right: 29px solid rgb(37, 11, 142);
+    transform: rotate(45deg);
+   }
+   .semirecoit-firstplayer,.semirecoit-secondplayer{
+    width: 0px;
+    height: 0px;
+    border-top: 29px solid transparent;
+    border-bottom: 29px solid transparent;
+  position: absolute;
+   }
+
+}
